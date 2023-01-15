@@ -3,7 +3,7 @@ import { invoke } from "@tauri-apps/api/tauri";
 
 export const load: PageLoad = async () => {
     const hest: string = await invoke("hello")
-    const genres: string = JSON.parse(await invoke("get_genres"))
+    const genres: string = await invoke("get_memes")
 
     console.log(genres);
     
